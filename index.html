@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Custom Virtual Light Switch</title>
+	<meta charset="utf-8">
+	<!--External CSS Stylesheet HyperLink Reference-->
+	<link rel="stylesheet" href="style.css">
+	<!--Setting the FavIcon to appear at the bottom of the Browser -->
+	<link rel="icon" href="Imgs/favIcon.png">
+</head>
+<body>
+<!--Main id linked to the main div in order to set the CSS Fluid Layout configurations-->
+	<div id="main">
+		<!--alt="Lamp" set to ensure accessibility-->
+	<img src="Imgs/lamp-off.png" alt="Lamp" id="lamp">
+
+	<form>
+		<!--Form input buttons formated with .button Class and
+		    their respective onclick JS Methods:-->
+		<input type="button" value="ON" onclick="on()" class="button">
+		<input type="button" value="OFF" onclick="off()" class="button">
+		<br>
+		<input type="button" value="BLINK" onclick="blink()" class="button">
+
+	</form>
+	</div>
+<!--External JS link-->
+<script src="lightSwitch.js"></script>
+</body>
+</html>
